@@ -137,7 +137,7 @@ def default_train_parser():
                         help="For distributed training: local_rank")
 
     # learning and log
-    parser.add_argument('--seed', type=int, default=42,
+    parser.add_argument('--seed', type=int, default=26,
                         help="random seed for initialization")
     parser.add_argument("--num_train_epochs", default=10.0, type=float,
                         help="Total number of training epochs to perform.")
@@ -164,7 +164,7 @@ def default_train_parser():
     parser.add_argument("--trans_heads", type=int, default=3)
 
     # graph
-    parser.add_argument('--num_edge_type', type=int, default=8)
+    parser.add_argument('--num_edge_type', type=int, default=9)
     parser.add_argument('--mask_edge_types', type=str, default="0")
 
     parser.add_argument('--gnn', default='gat:1,2', type=str, help='gat:n_layer, n_head')

@@ -14,6 +14,8 @@ db_path = sys.argv[2]
 #output
 output_file = sys.argv[3]
 
+# print("argv1:%s, argv2:%s, argv3:%s", %(input_file, da_path, output_file))
+
 EDGE_XY = re.compile(r'<a href="(.*?)">(.*?)</a>')
 def get_edges(sentence):
     #ret = EDGE_XY.findall(sentence)

@@ -1,5 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
+from sys import path
+path.append("../")
+
 import argparse
 import glob
 import logging
